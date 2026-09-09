@@ -54,6 +54,14 @@ pytest
 Covers exact and wildcard grants, deny-by-default, tenant isolation (including
 the internal bypass), and fail-closed context parsing.
 
+## Limitations and next steps
+
+- Grants are flat strings with prefix wildcards; there is no role inheritance or
+  attribute-based condition yet.
+- Decisions are returned, not logged; a real system records every allow and deny
+  for audit.
+- Next: add an audit sink and time-bound grants.
+
 ## License
 
 MIT.
