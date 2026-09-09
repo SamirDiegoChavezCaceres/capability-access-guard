@@ -1,5 +1,7 @@
 # capability-access-guard
 
+[![CI](https://github.com/SamirDiegoChavezCaceres/capability-access-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/SamirDiegoChavezCaceres/capability-access-guard/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 A small authorization guard built on one rule: **fail closed.** Nothing is
 allowed unless a capability explicitly grants it, and anything the engine is
 unsure about - a missing context, an unknown capability, a resource owned by
