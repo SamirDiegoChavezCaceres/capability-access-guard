@@ -7,6 +7,12 @@ allowed unless a capability explicitly grants it, and anything the engine is
 unsure about - a missing context, an unknown capability, a resource owned by
 another tenant - is a denial, not a silent pass.
 
+## Demo
+
+![demo](assets/demo.gif)
+
+Generate it with [VHS](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
+
 ## Why it looks like this
 
 - **Capabilities, not roles.** Permissions are dotted namespaces
