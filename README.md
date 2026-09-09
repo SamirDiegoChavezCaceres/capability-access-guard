@@ -5,8 +5,6 @@ allowed unless a capability explicitly grants it, and anything the engine is
 unsure about - a missing context, an unknown capability, a resource owned by
 another tenant - is a denial, not a silent pass.
 
-A from-scratch, neutral rewrite of a guard I built for a multi-tenant system.
-
 ## Why it looks like this
 
 - **Capabilities, not roles.** Permissions are dotted namespaces
