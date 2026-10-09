@@ -11,6 +11,13 @@ another tenant - is a denial, not a silent pass.
 
 ![demo](assets/demo.gif)
 
+The demo (`scripts/demo.py`) runs in memory with a sample user holding the
+capabilities `knowledge.read.*` and `campaign.read`. It shows a request being
+allowed (read marketing), two being denied with machine-readable reason codes
+(write, delete), and tenant isolation in action: the user may read a campaign
+owned by their own group but is denied one owned by another, again with a reason
+code rather than a bare failure.
+
 Generate it with [VHS](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
 
 ## Why it looks like this
